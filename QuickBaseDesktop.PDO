@@ -1,0 +1,269 @@
+[Root]
+Most Recent Package=QuickBase with Access Runtime
+Most Recent Deploy=QuickBaseDesktop with Access Runtime
+
+
+[Package|QuickBase without Access Runtime|Root]
+Home=MINNOW|\\NA\CVONROES\VBAPI\QUICKBASEDESKTOP.PDO
+SubWizProgID=ODEPDWiz.SetupPkgSubWiz
+BuildFolder=\\na\cvonroes\vbapi\Package
+
+[Package|QuickBase without Access Runtime|Configure DAO ISAMs]
+Applicable=
+
+[Package|QuickBase without Access Runtime|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|QuickBase without Access Runtime|Files Found]
+
+[Package|QuickBase without Access Runtime|Files Released]
+
+[Package|QuickBase without Access Runtime|Missing Dependency Information]
+C:\WINNT\SYSTEM32\MSXML.DLL=
+C:\Program Files\Common Files\System\ado\msadox.dll=
+
+[Package|QuickBase without Access Runtime|Out-of-Date Dependency Information]
+
+[Package|QuickBase without Access Runtime|Files Added]
+
+[Package|QuickBase without Access Runtime|Files Removed]
+
+[Package|QuickBase without Access Runtime|Files In Project]
+\\na\cvonroes\vbapi\QuickBaseDesktop.mdb=Yes
+C:\WINNT\SYSTEM32\MSVBVM60.DLL=Yes
+C:\WINNT\SYSTEM32\OLEAUT32.DLL=Yes
+C:\WINNT\SYSTEM32\OLEPRO32.DLL=Yes
+C:\WINNT\SYSTEM32\ASYCFILT.DLL=Yes
+C:\WINNT\SYSTEM32\STDOLE2.TLB=Yes
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Common Files\System\ado\msadox.dll=Yes
+C:\WINNT\SYSTEM32\MSXML.DLL=Yes
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\SETUP.EXE=Yes
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\setup1.exe=Yes
+C:\WINNT\SYSTEM32\ODESTKIT.DLL=Yes
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\ODEUNST.EXE=Yes
+
+[Package|QuickBase without Access Runtime|Configure Registry Files]
+Applicable=No
+
+[Package|QuickBase without Access Runtime|Configure Remote Servers]
+Applicable=No
+
+[Package|QuickBase without Access Runtime|Install Locations]
+\\na\cvonroes\vbapi\QuickBaseDesktop.mdb=$(AppPath)
+C:\WINNT\SYSTEM32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\STDOLE2.TLB=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Common Files\System\ado\msadox.dll=$(WinSysPath)
+C:\WINNT\SYSTEM32\MSXML.DLL=$(WinSysPath)
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\setup1.exe=$(WinPath)
+C:\WINNT\SYSTEM32\ODESTKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\ODEUNST.EXE=$(WinPath)
+
+[Package|QuickBase without Access Runtime|Configure Shared Files]
+Applicable=Yes
+\\na\cvonroes\vbapi\QuickBaseDesktop.mdb=No
+
+[Package|QuickBase without Access Runtime|Distribution]
+Type=single
+Size=
+Title=QuickBase Desktop
+
+[Package|QuickBase without Access Runtime|RunEnabled]
+RunEnabled=0
+
+[Package|QuickBase without Access Runtime|RunCommands]
+Command=
+
+[Package|QuickBase without Access Runtime|IconGroups]
+Group0=QuickBase Desktop
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|QuickBase without Access Runtime|QuickBase Desktop]
+Icon1="$(AppPath)\QuickBaseDesktop.mdb"
+Title1=QuickBase Desktop
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|QuickBase without Access Runtime|Package]
+PackageFolder=\\na\cvonroes\vbapi\Package
+ProjectFolder=\\na\cvonroes\vbapi
+ServerSideCab=
+Home=MINNOW
+ART=False
+ARTPath=
+MSDE=False
+MSDEPath=
+File1=\\na\cvonroes\vbapi\Package\setup.exe
+File2=\\na\cvonroes\vbapi\Package\Setup.Lst
+File3=\\na\cvonroes\vbapi\Package\QuickBaseDesktop.CAB
+Handler1=ODEPDWiz.FolderDplySubWiz
+Handler2=ODEPDWiz.WebPostDplySubWiz
+
+[Deploy|QuickBaseDesktop with Access Runtime|Root]
+Home=MINNOW|\\NA\CVONROES\VBAPI\QUICKBASEDESKTOP.PDO
+Package=QuickBase with Access Runtime
+Handler=ODEPDWiz.FolderDplySubWiz
+Folder=e:\VBSETUP1\deployQuickBaseDesktop
+
+[Package|QuickBase with Access Runtime|Intuit]
+Icon1="$(AppPath)\QuickBaseDesktop.mdb"
+Title1=QuickBase Desktop
+StartIn1=$(AppPath)
+Key1=Icon2
+
+
+[Package|QuickBase with Access Runtime|$(Programs)]
+Icon1="$(AppPath)\QuickBaseDesktop.mdb"
+Title1=QuickBase Desktop
+StartIn1=$(AppPath)
+Key1=Icon3
+
+[Package|QuickBase with Access Runtime|QuickBase Desktop]
+Icon1="$(AppPath)\QuickBaseDesktop.mdb"
+Title1=QuickBase Desktop
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|QuickBase with Access Runtime|$(Start Menu)]
+Icon1="$(AppPath)\QuickBaseDesktop.mdb"
+Title1=QuickBase Desktop
+StartIn1=$(AppPath)
+Key1=Icon2
+
+[Package|QuickBase with Access Runtime|Root]
+Home=MINNOW|\\NA\CVONROES\VBAPI\QUICKBASEDESKTOP.PDO
+SubWizProgID=ODEPDWiz.SetupPkgSubWiz
+BuildFolder=\\na\cvonroes\vbapi\Package
+
+[Package|QuickBase with Access Runtime|Configure DAO ISAMs]
+Applicable=
+
+[Package|QuickBase with Access Runtime|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|QuickBase with Access Runtime|Files Found]
+
+[Package|QuickBase with Access Runtime|Files Released]
+qdb.ico=
+QuickBaseDesktop.reg=
+
+[Package|QuickBase with Access Runtime|Missing Dependency Information]
+C:\WINNT\SYSTEM32\MSXML.DLL=
+C:\Program Files\Common Files\System\ado\msadox.dll=
+C:\Program Files\Common Files\System\ado\msado15.dll=
+
+[Package|QuickBase with Access Runtime|Out-of-Date Dependency Information]
+
+[Package|QuickBase with Access Runtime|Files Added]
+c:\program files\common files\system\ado\msado15.dll=
+d:\program files\microsoft office\odetools\v9\pdwizard\redist\mdac_typ.exe=
+\\na\cvonroes\vbapi\quickbasedesktop.bmp=
+\\na\cvonroes\vbapi\quickbasedesktop.ico=
+
+[Package|QuickBase with Access Runtime|Files Removed]
+c:\program files\common files\system\ado\msado15.dll=
+c:\program files\common files\system\ado\msadox.dll=
+c:\winnt\system32\msxml.dll=
+
+[Package|QuickBase with Access Runtime|Files In Project]
+\\na\cvonroes\vbapi\QuickBaseDesktop.mdb=Yes
+C:\WINNT\SYSTEM32\MSVBVM60.DLL=Yes
+C:\WINNT\SYSTEM32\OLEAUT32.DLL=Yes
+C:\WINNT\SYSTEM32\OLEPRO32.DLL=Yes
+C:\WINNT\SYSTEM32\ASYCFILT.DLL=Yes
+C:\WINNT\SYSTEM32\STDOLE2.TLB=Yes
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Common Files\System\ado\msadox.dll=No
+C:\WINNT\SYSTEM32\MSXML.DLL=No
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\SETUP.EXE=Yes
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\setup1.exe=Yes
+C:\WINNT\SYSTEM32\ODESTKIT.DLL=Yes
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\ODEUNST.EXE=Yes
+C:\Program Files\Common Files\System\ado\msado15.dll=No
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\Redist\MDAC_TYP.EXE=Yes
+\\na\cvonroes\vbapi\QuickBaseDesktop.bmp=Yes
+\\na\cvonroes\vbapi\QuickBaseDesktop.ico=Yes
+
+[Package|QuickBase with Access Runtime|Configure Registry Files]
+Applicable=No
+\\na\cvonroes\vbapi\QuickBaseDesktop.reg=Register
+
+[Package|QuickBase with Access Runtime|Configure Remote Servers]
+Applicable=No
+
+[Package|QuickBase with Access Runtime|Install Locations]
+\\na\cvonroes\vbapi\QuickBaseDesktop.mdb=$(AppPath)
+C:\WINNT\SYSTEM32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINNT\SYSTEM32\STDOLE2.TLB=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Common Files\System\ado\msadox.dll=$(WinSysPath)
+C:\WINNT\SYSTEM32\MSXML.DLL=$(WinSysPath)
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\setup1.exe=$(WinPath)
+C:\WINNT\SYSTEM32\ODESTKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\ODEUNST.EXE=$(WinPath)
+C:\Program Files\Common Files\System\ado\msado15.dll=$(WinSysPath)
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+\\na\cvonroes\vbapi\qdb.ico=$(AppPath)
+\\na\cvonroes\vbapi\QuickBaseDesktop.bmp=$(AppPath)
+\\na\cvonroes\vbapi\QuickBaseDesktop.ico=$(AppPath)
+
+[Package|QuickBase with Access Runtime|Configure Shared Files]
+Applicable=Yes
+\\na\cvonroes\vbapi\QuickBaseDesktop.mdb=No
+D:\Program Files\Microsoft Office\ODETools\V9\PDWizard\Redist\MDAC_TYP.EXE=No
+\\na\cvonroes\vbapi\qdb.ico=No
+\\na\cvonroes\vbapi\QuickBaseDesktop.bmp=No
+\\na\cvonroes\vbapi\QuickBaseDesktop.ico=No
+
+[Package|QuickBase with Access Runtime|Distribution]
+Type=single
+Size=
+Title=Intuit QuickBase Desktop
+
+[Package|QuickBase with Access Runtime|RunEnabled]
+RunEnabled=1
+
+[Package|QuickBase with Access Runtime|RunCommands]
+Command=mdac_typ.exe
+
+[Package|QuickBase with Access Runtime|Access Runtime]
+Runtime=False
+ARTPath=F:\ACCESSRT\FULL\DATA1.MSI
+
+[Package|QuickBase with Access Runtime|IconGroups]
+Group0=QuickBase
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|QuickBase with Access Runtime|QuickBase]
+Icon1="$(AppPath)\QuickBaseDesktop.mdb"
+Title1=QuickBase Desktop
+StartIn1=$(AppPath)
+Key1=Icon2
+
+[Package|QuickBase with Access Runtime|Package]
+PackageFolder=\\na\cvonroes\vbapi\Package
+ProjectFolder=\\na\cvonroes\vbapi
+ServerSideCab=
+Home=MINNOW
+ART=False
+ARTPath=
+MSDE=False
+MSDEPath=
+File1=\\na\cvonroes\vbapi\Package\setup.exe
+File2=\\na\cvonroes\vbapi\Package\Setup.Lst
+File3=\\na\cvonroes\vbapi\Package\QuickBaseDesktop.CAB
+Handler1=ODEPDWiz.FolderDplySubWiz
+Handler2=ODEPDWiz.WebPostDplySubWiz

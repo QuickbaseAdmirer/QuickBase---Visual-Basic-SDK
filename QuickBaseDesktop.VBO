@@ -1,0 +1,10 @@
+
+Reference=*\G{000204EF-0000-0000-C000-000000000046}#4.0#0C:\Program Files\Common Files\Microsoft Shared\VBA\VBA6\VBE6.DLL#Visual Basic For Applications
+Reference=*\G{4AFFC9A0-5F99-101B-AF4E-00AA003F0F07}#9.0#0D:\Program Files\Microsoft Office\Office\MSACC9.OLB#Microsoft Access 9.0 Object Library
+Reference=*\G{00000205-0000-0010-8000-00AA006D2EA4}#2.5#0C:\Program Files\Common Files\System\ADO\msado15.dll#Microsoft ActiveX Data Objects 2.5 Library
+Reference=*\G{00000600-0000-0010-8000-00AA006D2EA4}#2.5#0C:\Program Files\Common Files\System\ADO\msadox.dll#Microsoft ADO Ext. 2.5 for DDL and Security
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0C:\WINNT\SYSTEM32\STDOLE2.TLB#OLE Automation
+Reference=*\G{D63E0CE2-A0A2-11D0-9C02-00C04FC99C8E}#2.0#0C:\WINNT\SYSTEM32\MSXML.DLL#Microsoft XML, version 2.0
+Reference=*\G{00025E01-0000-0000-C000-000000000046}#5.0#0C:\Program Files\Common Files\Microsoft Shared\DAO\DAO360.DLL#Microsoft DAO 3.6 Object Library
+EXEName32=\\na\cvonroes\vbapi\QuickBaseDesktop.mdb
+VBAProjectName=\\na\cvonroes\vbapi\QuickBaseDesktop.mdb
