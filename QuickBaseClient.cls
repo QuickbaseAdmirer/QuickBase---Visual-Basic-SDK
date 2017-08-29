@@ -20,6 +20,7 @@ Option Explicit
 
 Private Password As String
 Private UserName As String
+Private UserToken As String
 Private strProxyPassword As String
 Private strProxyUsername As String
 Private ticket As String
@@ -117,9 +118,13 @@ Public Sub SetFieldProperties(ByVal dbid As String, ByVal fid As String, ParamAr
     Call APIXMLPost(dbid, "API_SetFieldProperties", xmlQDBRequest, useHTTPS)
 End Sub
 
-Public Function Authenticate(ByVal strUsername As String, ByVal strPassword As String) As Long
-    UserName = strUsername
-    Password = strPassword
+Public Function Authenticate(Optional ByVal strUsername As String, Optional ByVal strPassword As String, Optional ByVal strUserToken As String) As Long
+    If strUsername <> "" Then
+        UserName = strUsername
+        Password = strPassword
+    Else
+        UserToken = strUserToken
+    End If
     ticket = ""
     Authenticate = 0
 End Function
@@ -519,6 +524,8 @@ Public Function InitXMLRequest() As MSXML.DOMDocument
     ElseIf UserName <> "" Then
         addParameter xmlQDBRequest, "username", UserName
         addParameter xmlQDBRequest, "password", Password
+    ElseIf UserToken <> "" Then
+        addParameter xmlQDBRequest, "usertoken", UserToken
     End If
     Set InitXMLRequest = xmlQDBRequest
 End Function
@@ -888,7 +895,7 @@ Private Function HTTPPost(QDBHost As String, useHTTPS As Boolean, script As Stri
     Else
         URL = "http://" + QDBHost + script
     End If
-    HttpReq.open "POST", URL, False
+    HttpReq.Open "POST", URL, False
     HttpReq.setRequestHeader "Content-Type", content_type
     HttpReq.send vbCrLf + vbCrLf + content
     If returnFileName <> "" Then

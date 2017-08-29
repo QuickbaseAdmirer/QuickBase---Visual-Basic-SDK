@@ -4,35 +4,35 @@ Begin VB.Form TestPanel
    ClientHeight    =   5385
    ClientLeft      =   45
    ClientTop       =   270
-   ClientWidth     =   7935
+   ClientWidth     =   8820
    LinkTopic       =   "Form1"
    ScaleHeight     =   5385
-   ScaleWidth      =   7935
+   ScaleWidth      =   8820
    StartUpPosition =   3  'Windows Default
    Begin VB.FileListBox File1 
       Height          =   3015
-      Left            =   2160
+      Left            =   2880
       TabIndex        =   22
       Top             =   2160
       Width           =   2175
    End
    Begin VB.DirListBox Dir1 
       Height          =   1890
-      Left            =   120
+      Left            =   840
       TabIndex        =   21
       Top             =   3240
       Width           =   1935
    End
    Begin VB.DriveListBox Drive1 
       Height          =   315
-      Left            =   120
+      Left            =   840
       TabIndex        =   20
       Top             =   2640
       Width           =   1935
    End
    Begin VB.TextBox txtServer 
       Height          =   288
-      Left            =   1560
+      Left            =   2280
       TabIndex        =   18
       Text            =   "www.quickbase.com"
       Top             =   1680
@@ -40,28 +40,28 @@ Begin VB.Form TestPanel
    End
    Begin VB.TextBox txtErrorText 
       Height          =   288
-      Left            =   4560
+      Left            =   5280
       TabIndex        =   15
       Top             =   2520
       Width           =   3255
    End
    Begin VB.TextBox txtErrorCode 
       Height          =   288
-      Left            =   6960
+      Left            =   7680
       TabIndex        =   14
       Top             =   2160
       Width           =   735
    End
    Begin VB.TextBox txtRid 
       Height          =   288
-      Left            =   1560
+      Left            =   2280
       TabIndex        =   9
       Top             =   1200
       Width           =   1695
    End
    Begin VB.TextBox txtDBName 
       Height          =   288
-      Left            =   4800
+      Left            =   5520
       TabIndex        =   8
       Text            =   "QuickBase VB API Demo"
       Top             =   240
@@ -69,7 +69,7 @@ Begin VB.Form TestPanel
    End
    Begin VB.TextBox txtdbid 
       Height          =   288
-      Left            =   4800
+      Left            =   5520
       TabIndex        =   5
       Top             =   720
       Width           =   3015
@@ -77,7 +77,7 @@ Begin VB.Form TestPanel
    Begin VB.TextBox txtPassword 
       Height          =   288
       IMEMode         =   3  'DISABLE
-      Left            =   1560
+      Left            =   2280
       PasswordChar    =   "*"
       TabIndex        =   4
       Text            =   "Password"
@@ -86,7 +86,7 @@ Begin VB.Form TestPanel
    End
    Begin VB.TextBox txtUsername 
       Height          =   288
-      Left            =   1560
+      Left            =   2280
       TabIndex        =   3
       Text            =   "Depositor"
       Top             =   210
@@ -94,7 +94,7 @@ Begin VB.Form TestPanel
    End
    Begin VB.TextBox txtResult 
       Height          =   1815
-      Left            =   4560
+      Left            =   5280
       MultiLine       =   -1  'True
       TabIndex        =   2
       Top             =   3360
@@ -103,7 +103,7 @@ Begin VB.Form TestPanel
    Begin VB.CommandButton cmdSubmit 
       Caption         =   "Submit"
       Height          =   372
-      Left            =   5640
+      Left            =   6360
       TabIndex        =   1
       Top             =   1680
       Width           =   1092
@@ -111,17 +111,25 @@ Begin VB.Form TestPanel
    Begin VB.ComboBox cmbAction 
       Height          =   315
       ItemData        =   "TestPanel.frx":0000
-      Left            =   4800
+      Left            =   5520
       List            =   "TestPanel.frx":0013
       TabIndex        =   0
       Text            =   "Choose an API Call!"
       Top             =   1200
       Width           =   3015
    End
+   Begin VB.Label UserTokenTip 
+      Caption         =   "Omit for User Token"
+      Height          =   255
+      Left            =   720
+      TabIndex        =   25
+      Top             =   840
+      Width           =   1455
+   End
    Begin VB.Label lblResult 
       Caption         =   "Result of API Call"
       Height          =   255
-      Left            =   4680
+      Left            =   5400
       TabIndex        =   24
       Top             =   3000
       Width           =   2055
@@ -129,7 +137,7 @@ Begin VB.Form TestPanel
    Begin VB.Label lblFile 
       Caption         =   "Pick a file to Upload"
       Height          =   255
-      Left            =   120
+      Left            =   840
       TabIndex        =   23
       Top             =   2280
       Width           =   1695
@@ -137,7 +145,7 @@ Begin VB.Form TestPanel
    Begin VB.Label lblServer 
       Caption         =   "Host or IP Address"
       Height          =   255
-      Left            =   120
+      Left            =   840
       TabIndex        =   19
       Top             =   1680
       Width           =   1935
@@ -145,7 +153,7 @@ Begin VB.Form TestPanel
    Begin VB.Label lblErrorText 
       Caption         =   "Error Text"
       Height          =   255
-      Left            =   4680
+      Left            =   5400
       TabIndex        =   17
       Top             =   2160
       Width           =   855
@@ -153,7 +161,7 @@ Begin VB.Form TestPanel
    Begin VB.Label lblErrcode 
       Caption         =   "Error Code"
       Height          =   255
-      Left            =   6000
+      Left            =   6720
       TabIndex        =   16
       Top             =   2160
       Width           =   855
@@ -161,7 +169,7 @@ Begin VB.Form TestPanel
    Begin VB.Label lblDBID 
       Caption         =   "Database DBID"
       Height          =   255
-      Left            =   3480
+      Left            =   4200
       TabIndex        =   13
       Top             =   720
       Width           =   1215
@@ -169,7 +177,7 @@ Begin VB.Form TestPanel
    Begin VB.Label lblDBName 
       Caption         =   "Database Name"
       Height          =   255
-      Left            =   3480
+      Left            =   4200
       TabIndex        =   12
       Top             =   240
       Width           =   1215
@@ -177,7 +185,7 @@ Begin VB.Form TestPanel
    Begin VB.Label lblAction 
       Caption         =   "Action"
       Height          =   255
-      Left            =   3720
+      Left            =   4440
       TabIndex        =   11
       Top             =   1200
       Width           =   615
@@ -185,7 +193,7 @@ Begin VB.Form TestPanel
    Begin VB.Label lblRid 
       Caption         =   "Record ID#"
       Height          =   255
-      Left            =   120
+      Left            =   1320
       TabIndex        =   10
       Top             =   1200
       Width           =   1215
@@ -193,18 +201,19 @@ Begin VB.Form TestPanel
    Begin VB.Label lblPassword 
       Caption         =   "Password"
       Height          =   255
-      Left            =   120
+      Left            =   1440
       TabIndex        =   7
       Top             =   600
       Width           =   1455
    End
    Begin VB.Label lblUsername 
-      Caption         =   "Username"
-      Height          =   255
-      Left            =   120
+      AutoSize        =   -1  'True
+      Caption         =   "Username/UserToken"
+      Height          =   195
+      Left            =   600
       TabIndex        =   6
       Top             =   240
-      Width           =   1455
+      Width           =   1815
    End
 End
 Attribute VB_Name = "TestPanel"
@@ -228,7 +237,12 @@ Dim xmlQDBResponse As New MSXML.DOMDocument
 Dim strUpdateID As String
 Set QDB = New QuickBase.QuickBaseClient
 QDB.setServer txtServer.Text, True
-txtResult.Text = QDB.Authenticate(txtUsername.Text, txtPassword.Text)
+If txtPassword.Text = "" Then
+    txtResult.Text = QDB.Authenticate(, , txtUsername.Text)
+Else
+    txtResult.Text = QDB.Authenticate(txtUsername.Text, txtPassword.Text)
+End If
+
 DoEvents
 Select Case cmbAction.Text
 
@@ -303,17 +317,9 @@ Select Case cmbAction.Text
         MsgBox "Please Choose an API Call!"
     End Select
 
-txtErrorCode.Text = Format(QDB.errorCode)
+txtErrorCode.Text = Format(QDB.errorcode)
 txtErrorText.Text = Format(QDB.errortext)
 Set QDB = Nothing
 End Sub
 
 
-
-Private Sub Dir1_Change()
-File1.Path = Dir1.Path
-End Sub
-
-Private Sub Drive1_Change()
-Dir1.Path = Drive1.Drive
-End Sub
